@@ -1,0 +1,35 @@
+#include <iostream>
+#include <stack>
+
+int main() {
+    // Создаем стек целых чисел
+    std::stack<int> myStack;
+
+    // Добавляем элементы
+    myStack.push(10);
+    myStack.push(20);
+    myStack.push(30);
+
+    // Вывод текущего размера
+    std::cout << "Размер стека: " << myStack.size() << std::endl;
+
+    // Просмотр верхнего элемента
+    if (!myStack.empty()) {
+        std::cout << "Верхний элемент: " << myStack.top() << std::endl;
+    }
+
+    // Выталкиваем элемент
+    if (!myStack.empty()) {
+        std::cout << "Удаляем элемент: " << myStack.top() << std::endl;
+        myStack.pop();
+    }
+
+    // Проверка, пуст ли стек
+    if (myStack.empty()) {
+        std::cout << "Стек пустой" << std::endl;
+    } else {
+        std::cout << "После удаления верхний элемент: " << myStack.top() << std::endl;
+    }
+
+    return 0;
+}
