@@ -1,1 +1,10 @@
+import array
 
+# Создание массива целых чисел
+arr = array.array('i', [1, 2, 3, 4, 5])
+print(arr)
+
+
+# Создание массива чисел с плавающей запятой
+arr_float = array.array('f', [1\.0, 2.0, 3.0, 4.0, 5.0])
+print(arr_float)
