@@ -1,0 +1,32 @@
+import java.util.Stack;
+
+public class StackExample {
+    public static void main(String[] args) {
+        // Создаем стек целых чисел
+        Stack<Integer> stack = new Stack<>();
+
+        // Добавляем элементы
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        // Вывод текущего содержимого стека
+        System.out.println("Текущий стек: " + stack);
+
+        // Просмотр верхнего элемента
+        if (!stack.isEmpty()) {
+            System.out.println("Верхний элемент: " + stack.peek());
+        }
+
+        // Удаление элемента
+        if (!stack.isEmpty()) {
+            System.out.println("Удаляем верхний элемент: " + stack.pop());
+        }
+
+        // Проверка, пуст ли стек
+        System.out.println("Стек пустой? " + stack.isEmpty());
+
+        // Размер стека
+        System.out.println("Размер стека: " + stack.size());
+    }
+}
